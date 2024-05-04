@@ -20,6 +20,15 @@ The Python script you're working with simulates a slot machine game, allowing pl
 OTHER PROJECTS -
 1. youtbe downloader
 
+This Python script creates a simple YouTube video downloader GUI application using the pytube library and tkinter for the graphical interface. Upon execution, the user can input a YouTube video URL, select a folder to save the downloaded video, and initiate the download process by clicking the "Get video!" button.
+
+The DownloaderApp class sets up the main GUI window with a title, an entry field for the YouTube video URL, and a button to start the download process. The open_file_dialog function opens a file dialog to select the destination folder for saving the downloaded video.
+
+The download_video function is responsible for downloading the video from the provided URL to the specified directory. It uses pytube to fetch the video streams, selects the highest resolution progressive stream in MP4 format, and downloads the video file to the specified directory. Upon completion or failure, it displays a corresponding message box.
+
+The script utilizes threading to ensure that the GUI remains responsive during the download process. When the user initiates the download, the GUI button is disabled, and the download process runs in a separate thread, allowing the user to continue interacting with the application.
+
+Overall, this script provides a user-friendly way to download YouTube videos with a simple and intuitive graphical interface.
 
 2. Password generator
 This Python script is a customizable password generator that allows users to specify the minimum length of the password and optionally include numbers and special characters. The function generate_password constructs the password by randomly selecting characters from a pool that includes letters, and conditionally, digits and punctuation based on user preferences. It ensures the password meets the user-specified criteria regarding length and character types before returning it. The script interacts with the user through prompts to determine these preferences, then generates and displays the resulting password.
