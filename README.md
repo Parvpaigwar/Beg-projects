@@ -18,7 +18,7 @@ The Python script you're working with simulates a slot machine game, allowing pl
 
 
 OTHER PROJECTS -
-1. youtbe downloader
+1. YOUTUBE downloader
 
 This Python script creates a simple YouTube video downloader GUI application using the pytube library and tkinter for the graphical interface. Upon execution, the user can input a YouTube video URL, select a folder to save the downloaded video, and initiate the download process by clicking the "Get video!" button.
 
